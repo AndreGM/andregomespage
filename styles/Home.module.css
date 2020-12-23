@@ -72,10 +72,12 @@
 }
 
 .grid {
-  display: flex;
+  display: grid;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
+
+  grid-template-columns: 1fr 1fr;
   max-width: 800px;
   margin-top: 3rem;
 }
@@ -100,7 +102,7 @@
 }
 
 .card h3 {
-  margin: 0 0 1rem 0;
+  margin: 0 0 0 0;
   font-size: 1.5rem;
 }
 
@@ -117,6 +119,10 @@
 @media (max-width: 600px) {
   .grid {
     width: 100%;
-    flex-direction: column;
+    grid-template-columns: 1fr;
+  }
+  .card h3 {
+    display: flex;
+    justify-content: space-between;
   }
 }
