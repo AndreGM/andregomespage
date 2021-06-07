@@ -3,7 +3,7 @@ import '../styles/globals.css'
 import TagManager from 'react-gtm-module'
 
 const tagManagerArgs = {
-  id: 'GTM-W2MWDBS'
+  gtmID: 'GTM-W2MWDBS'
 }
 
 function MyApp({ Component, pageProps }) {
